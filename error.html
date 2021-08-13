@@ -31,51 +31,72 @@
     />
 
     <style>
+      body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .error {
         width: 100%;
-        background-image: url(./image/Error404.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        height: auto;
+        background-color: #f8f6f6;
       }
       .fa-globe {
         padding-right: 10px;
+      }
+      .image {
+        padding-top: 390px;
+      }
+      @media(max-width: 767px) {
+        .image{
+          padding-top: 0px;
+        }
       }
     </style>
   </head>
 
   <body>
-    <div class="error py-5">
-      <div class="container">
-        <div
-          class="d-inline-flex align-items-center justify-content-start py-5"
-        >
-          <div class="mid-content my-5 py-4">
-            <h1 class="pb-5 text-danger fw-bold"
-              >Oops!! The page is not accessible.</h1
-            >
-            <h3 class="fw-normal text-muted fs-3 pb-4"
-              >Service is not available at the moment, please make<br />
-              payment asap to resume your service back again.</h3
-            >
+    <div class="error ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div
+            class="d-inline-flex align-items-center justify-content-start py-5"
+          >
+            <div class="mid-content py-5 my-5">
+              <h1 class="pb-5 text-danger fw-bold"
+                >Oops!! The page is not accessible.</h1
+              >
+              <h3 class="fw-normal text-muted fs-3 pb-4"
+                >Service is not available at the moment, please make<br />
+                payment asap to resume your service back again.</h3
+              >
 
-            <h2 class="fw-normal text-muted fs-3 pb-3"
-              ><u>Contact Us for further information</u></h2
-            >
-            <div class="d-inline-flex align-items-center justify-content-start">
-              <div>
-                <p class="text-muted fs-5 py-2"
-                  ><i class="fas fa-mobile-alt fs-3"></i
-                  ><i class="fab fa-viber px-3 fs-3"></i>+977-9851241039</p
-                >
+              <h2 class="fw-normal text-muted fs-3 pb-3"
+                ><u>Contact Us for further information</u></h2
+              >
+              <div
+                class="d-inline-flex align-items-center justify-content-start"
+              >
+                <div>
+                  <p class="text-muted fs-5 py-2"
+                    ><i class="fas fa-mobile-alt fs-3"></i
+                    ><i class="fab fa-viber px-3 fs-3"></i>+977-9851241039</p
+                  >
 
-                <a
-                  href="http:\\lotussoft.com.np "
-                  class="text-decoration-none text-muted fs-5 py-5"
-                  ><i class="fas fa-globe fs-3"></i>http:\\lotussoft.com.np</a
-                >
+                  <a
+                    href="http:\\lotussoft.com.np "
+                    class="text-decoration-none text-muted fs-5 py-5" target="blank"
+                    ><i class="fas fa-globe fs-3"></i>http://lotussoft.com.np</a
+                  >
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="col-md-5 p-0">
+          <div class="d-inline-flex justify-content-end align-content-end">
+            <img class="img-fluid image" src="./image/Error.png" alt="" />
           </div>
         </div>
       </div>
